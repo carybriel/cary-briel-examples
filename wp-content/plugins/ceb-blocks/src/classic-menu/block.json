@@ -1,0 +1,42 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "ceb/classic-menu",
+	"title": "CEB Classic Menu",
+	"category": "ceb",
+	"textdomain": "ceb-blocks",
+	"icon": "menu",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"menuId": {
+			"type": "number",
+			"default": 0
+		},
+		"navigationLabel": {
+			"type": "string",
+			"default": ""
+		},
+		"depth": {
+			"type": "number",
+			"default": 0,
+			"enum": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5
+			]
+		},
+		"useBasicStyles": {
+			"type": "boolean",
+			"default": true
+		}
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php",
+	"description": "Display an existing WordPress classic menu.",
+	"editorStyle": "file:./style-index.css"
+}

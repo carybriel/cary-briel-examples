@@ -1,0 +1,16 @@
+{
+  "name": "ceb-blocks",
+  "version": "0.1.0",
+  "private": true,
+  "license": "GPL-3.0-or-later",
+  "scripts": {
+    "start": "wp-scripts start",
+    "build": "wp-scripts build"
+  },
+  "engines": {
+    "node": "^20.19.0 || >=22.13.0"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "35.0.0"
+  }
+}

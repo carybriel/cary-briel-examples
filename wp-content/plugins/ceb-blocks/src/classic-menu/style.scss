@@ -1,0 +1,27 @@
+// Every rule requires the opt-in class, including on pages with mixed instances.
+.ceb-classic-menu--styled {
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.sub-menu {
+		padding-inline-start: var(--ceb-menu-indent, 1.25em);
+	}
+
+	li + li {
+		margin-block-start: var(--ceb-menu-item-gap, 0.5em);
+	}
+
+	a {
+		color: inherit;
+		text-decoration: underline;
+		text-underline-offset: 0.15em;
+	}
+
+	a:focus-visible {
+		outline: 2px solid currentColor;
+		outline-offset: 3px;
+	}
+}
